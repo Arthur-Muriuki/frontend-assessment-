@@ -1,0 +1,13 @@
+body {
+    background-color: #f4f4f4;
+}
+
+/* Simulates a mobile screen width on desktop for testing */
+.mobile-container {
+    max-width: 400px;
+    min-height: 850px;
+    background-color: #ffffff !important;
+    overflow-x: hidden;
+    border-radius: 30px; /* Gives it phone-like edges */
+    border: 8px solid #333; /* Simulated phone bezel */
+}
