@@ -3,18 +3,19 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Responsive wrapper instead of fixed mobile container */
+/* Responsive wrapper */
 .app-wrapper {
-    max-width: 500px; /* Constrains the width on desktop to keep the app aesthetic */
+    max-width: 450px; /* Tighter width for perfect mobile emulation on desktop */
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
+    border-radius: 12px;
 }
 
 /* UI Colors & Components */
 .profile-box {
     background-color: #4a4a4a;
-    border: 1.5px solid #d4a017; /* Golden border */
+    border: 1px solid #d4a017; /* Golden border */
 }
 
 .profile-img {
@@ -32,6 +33,9 @@ body {
 .info-box {
     background-color: #4a4a4a;
 }
+.text-gold {
+    color: #d4a017;
+}
 
 /* Stat Card Colors */
 .bg-pink { background-color: #fbd4d4; }
@@ -40,7 +44,7 @@ body {
 .bg-lightpink { background-color: #fad1d8; }
 
 .stat-name {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     line-height: 1.1;
     color: #333;
 }
@@ -54,18 +58,13 @@ body {
 .bg-foundation { background-color: #d4a017; } /* Golden yellow */
 .bg-economy { background-color: #7d9cb9; } /* Muted blue */
 
-/* Footer & Floating WhatsApp Icon */
-.footer-area {
-    min-height: 30px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-
+/* Floating WhatsApp Icon */
 .whatsapp-btn {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     position: absolute;
-    right: 20px;
-    top: -25px; /* Floats half inside, half outside the footer */
+    right: 15px;
+    bottom: 10px; /* Anchors it exactly over the footer like the image */
     cursor: pointer;
+    z-index: 10;
 }
