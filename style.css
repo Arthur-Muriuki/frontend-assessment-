@@ -1,23 +1,38 @@
+/* ==========================================================================
+   Base & Globals
+   ========================================================================== */
 body {
     background-color: #f0f2f5;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Responsive wrapper */
+/* ==========================================================================
+   Layout & Wrappers
+   ========================================================================== */
+/* Restricts width for perfect mobile emulation on desktop screens */
 .app-wrapper {
-    max-width: 450px; /* Tighter width for perfect mobile emulation on desktop */
+    max-width: 450px; 
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
     border-radius: 12px;
 }
 
-/* UI Colors & Components */
+/* ==========================================================================
+   Components & UI Elements
+   ========================================================================== */
+/* Profile Header */
 .profile-box {
     background-color: #4a4a4a;
     border: 1px solid #d4a017; /* Golden border */
 }
 
+/* Informational Text Boxes */
+.info-box {
+    background-color: #4a4a4a;
+}
+
+/* Images */
 .profile-img {
     width: 60px;
     height: 60px;
@@ -30,41 +45,49 @@ body {
     object-fit: cover;
 }
 
-.info-box {
-    background-color: #4a4a4a;
-}
+/* Text Utilities */
 .text-gold {
     color: #d4a017;
 }
 
-/* Stat Card Colors */
-.bg-pink { background-color: #fbd4d4; }
-.bg-green { background-color: #d6edb9; }
-.bg-yellow { background-color: #ffeab6; }
-.bg-lightpink { background-color: #fad1d8; }
-
+/* ==========================================================================
+   Stats Grid Cards
+   ========================================================================== */
 .stat-name {
     font-size: 0.75rem;
     line-height: 1.1;
     color: #333;
 }
 
-/* Membership Accordion Styles */
+/* Stat Card Background Colors */
+.bg-pink      { background-color: #fbd4d4; }
+.bg-green     { background-color: #d6edb9; }
+.bg-yellow    { background-color: #ffeab6; }
+.bg-lightpink { background-color: #fad1d8; }
+
+/* ==========================================================================
+   Memberships Accordion
+   ========================================================================== */
 .membership-header {
     cursor: pointer;
     font-size: 0.85rem;
     letter-spacing: 0.5px;
 }
-.bg-foundation { background-color: #d4a017; } /* Golden yellow */
-.bg-economy { background-color: #7d9cb9; } /* Muted blue */
 
+/* Membership Theme Colors */
+.bg-foundation { background-color: #d4a017; } /* Golden yellow */
+.bg-economy    { background-color: #7d9cb9; } /* Muted blue */
+
+/* ==========================================================================
+   Floating Action Buttons
+   ========================================================================== */
 /* Floating WhatsApp Icon */
 .whatsapp-btn {
     width: 55px;
     height: 55px;
     position: absolute;
     right: 15px;
-    bottom: 10px; /* Anchors it exactly over the footer like the image */
+    bottom: 10px; /* Anchors it exactly over the footer like the design */
     cursor: pointer;
     z-index: 10;
 }
