@@ -2,6 +2,11 @@
 
 This is a responsive, interactive user interface built for a frontend assessment. It features a user profile overview, a responsive statistics grid, and an interactive membership selection area.
 
+[**🔗 View Live Demo Here**]
+
+(https://arthur-muriuki.github.io/frontend-assessment-/)
+
+
 ##  Features
 
 * **Fully Responsive:** Fluidly adapts to mobile, tablet, and desktop screens using a mobile-first approach.
@@ -27,4 +32,6 @@ This is a responsive, interactive user interface built for a frontend assessment
 cd frontend-assessment
 
 3. Open the index.html file in any modern web browser. No build tools or servers are required!
+
+
 
